@@ -29,6 +29,8 @@
     <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
     <script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
 
+    <script src="js/galleryReader.js"></script>
+
 </head>
 
 <body class="bg-body homepage post-template" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
@@ -312,34 +314,7 @@
                                 <!-- Initialize base gallery -->
                                 <script type="text/javascript">
                                     $('document').ready(function () {
-                                        var folder = "images/gallery1/";
-                                        $.ajax({
-                                            url: folder,
-                                            asynch: false,
-                                            cache: false,
-                                            success: function (data) {
-                                                var $gallery = $("#gallery");
-                                                var imgsToAppend = '';
-                                                $(data).find("a").each(function (i, el) {
-                                                    var val = $(el).attr('href');
-                                                    if (val.match(/\.(jpe?g|png|gif)$/)) {
-                                                        imgsToAppend += "<img alt='' src='" + folder + val + "' data-image='" + folder + val + "' data-description='uploaded file by user'>";
-                                                    }
-                                                });
-                                                if (imgsToAppend) {
-                                                    $gallery.append(imgsToAppend);
-                                                }
-                                                $gallery.unitegallery({
-                                                    gallery_theme: "tiles",
-                                                    lightbox_overlay_opacity: 0.95,
-                                                    tiles_type: "justified",
-                                                    tiles_justified_row_height: 300,
-                                                    tiles_space_between_cols: 10,
-                                                    tiles_justified_space_between: 10,
-                                                    tile_overlay_color: "#ff00088b",
-                                                });
-                                            }
-                                        });
+                                        fetchGalleryImages("gallery1");
                                     });
                                 </script>
 
@@ -350,43 +325,8 @@
                                             var filterValue = $(this).attr("data-filter");
 
                                             $("#gallery").empty();
-
-                                            // Show/hide images based on filter
-                                            /*$("#gallery img").each(function () {
-                                                var imageCategory = $(this).attr("data-category");
-                                                if (filterValue !== "*" && imageCategory !== filterValue) {
-                                                    $(this).remove();
-                                                }
-                                            });*/
-
-                                            var folder = "images/" + filterValue.replace(".", "") + "/";
-                                            $.ajax({
-                                                url: folder,
-                                                asynch: false,
-                                                cache: false,
-                                                success: function (data) {
-                                                    var $gallery = $("#gallery");
-                                                    var imgsToAppend = '';
-                                                    $(data).find("a").each(function (i, el) {
-                                                        var val = $(el).attr('href');
-                                                        if (val.match(/\.(jpe?g|png|gif)$/)) {
-                                                            imgsToAppend += "<img alt='uploaded file' src='" + folder + val + "' data-image='" + folder + val + "' data-description='uploaded file by user'>";
-                                                        }
-                                                    });
-                                                    if (imgsToAppend) {
-                                                        $gallery.append(imgsToAppend);
-                                                    }
-                                                    $gallery.unitegallery({
-                                                        gallery_theme: "tiles",
-                                                        lightbox_overlay_opacity: 0.95,
-                                                        tiles_type: "justified",
-                                                        tiles_justified_row_height: 300,
-                                                        tiles_space_between_cols: 10,
-                                                        tiles_justified_space_between: 10,
-                                                        tile_overlay_color: "#ff00088b",
-                                                    });
-                                                }
-                                            });
+                                            var filter = filterValue.replace(".", "");
+                                            fetchGalleryImages(filter);
                                         });
                                     });
                                 </script>
@@ -538,30 +478,20 @@
 
                                 <script type="text/javascript">
                                     $(function () {
-                                        var folderPath = 'images/graphic-design/';
-
-                                        fetch(folderPath) // ❌ This will fail unless your server returns a directory listing
-                                            .then(response => response.text())
-                                            .then(text => {
-                                                const parser = new DOMParser();
-                                                const doc = parser.parseFromString(text, "text/html");
-
-                                                const imageLinks = Array.from(doc.querySelectorAll("a"))
-                                                    .map(link => link.getAttribute("href"))
-                                                    .filter(href => href && href.match(/\.(jpg|jpeg|png|gif|webp)$/i))
-                                                    .map(imageName => folderPath + imageName);
-
+                                        fetch("gallery.json")
+                                            .then(response => response.json())
+                                            .then(data => {
                                                 let index = 0;
 
-                                                imageLinks.forEach(imagePath => {
+                                                data['graphic-design'].forEach(url => {
                                                     const img = new Image();
-                                                    img.src = imagePath;
+                                                    img.src = url;
 
                                                     img.onload = function () {
                                                         $(".swiper-wrapper.design-wrapper").append(`
                                                         <div class="swiper-slide hovereffect">
                                                             <div style="background-color: #ff00088b;">
-                                                              <img src="${imagePath}" class="open-gallery img-fluid img-responsive" data-index="${index}" alt="Open Image"/>
+                                                              <img src="${url}" class="open-gallery img-fluid img-responsive" data-index="${index}" alt="Open Image"/>
                                                         </div>
                                                     </div>`);
                                                     };
@@ -569,7 +499,6 @@
                                                     index++;
                                                 });
                                             })
-                                            .catch(error => console.error("Error fetching images:", error));
                                     });
                                 </script>
 
