@@ -16,7 +16,7 @@ function loadGallery(category, data) {
     var imgsToAppend = '';
 
     data[category].forEach(url => {
-        imgsToAppend += `<img alt='uploaded file' src="${url}" data-image="${url}" data-description='uploaded file by user'>`;
+        imgsToAppend += `<img alt='' src="${url}" data-image="${url}" data-description=''>`;
     });
 
     if (imgsToAppend) {

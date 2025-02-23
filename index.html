@@ -486,14 +486,12 @@
                                                     const img = new Image();
                                                     img.src = url;
 
-                                                    img.onload = function () {
                                                         $(".swiper-wrapper.design-wrapper").append(`
                                                         <div class="swiper-slide hovereffect">
                                                             <div style="background-color: #ff00088b;">
                                                               <img src="${url}" class="open-gallery img-fluid img-responsive" data-index="${index}" alt="Open Image"/>
                                                         </div>
                                                     </div>`);
-                                                    };
 
                                                     index++;
                                                 });
