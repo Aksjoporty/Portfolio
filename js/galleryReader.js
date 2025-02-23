@@ -31,4 +31,6 @@ function loadGallery(category, data) {
         tiles_justified_space_between: 10,
         tile_overlay_color: "#ff00088b",
     });
+
+    AOS.refresh();
 }

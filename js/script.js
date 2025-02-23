@@ -176,8 +176,8 @@
     });
 
     AOS.init({
-      duration: 1200,
-      // once: true,
+        duration: 1600,
+      once: false,
     })
 
   });

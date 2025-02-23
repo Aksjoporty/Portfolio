@@ -187,7 +187,7 @@
         <header id="header-nav" class="col-lg-2 position-fixed px-5 bg-white h-100">
             <div class="header-wrap d-flex flex-column justify-content-between h-100">
                 <div class="navigation">
-                    <div class="site-logo my-5 pb-5" data-aos="fade">
+                    <div class="site-logo my-5 pb-5" data-aos="fade" data-aos-once="true">
                         <a href="index.html">
                             <img src="images/main/logo.png" alt="logo" class="img-fluid logoimage" />
                         </a>
@@ -196,19 +196,19 @@
                     <nav id="one-page-menu" class="vertical-menu my-5">
                         <ul class="menu-list list-unstyled">
                             <li class="pb-3">
-                                <a href="#photography" class="nav-link text-uppercase" data-aos="fade">Photography</a>
+                                <a href="#photography" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true">Photography</a>
                             </li>
                             <li class="pb-3">
-                                <a href="#publications" class="nav-link text-uppercase" data-aos="fade" data-aos-delay="50">Publications</a>
+                                <a href="#publications" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="50">Publications</a>
                             </li>
                             <li class="pb-3">
-                                <a href="#design" class="nav-link text-uppercase" data-aos="fade" data-aos-delay="100">Design</a>
+                                <a href="#design" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="100">Design</a>
                             </li>
                             <li class="pb-3">
-                                <a href="#about" class="nav-link text-uppercase" data-aos="fade" data-aos-delay="150">About</a>
+                                <a href="#about" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="150">About</a>
                             </li>
                             <li class="pb-3">
-                                <a href="#contact" class="nav-link text-uppercase" data-aos="fade" data-aos-delay="200">Contact</a>
+                                <a href="#contact" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="200">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -308,7 +308,7 @@
                             </div>
 
                             <div data-aos="fade-up">
-                                <div id="gallery" style="display:none;"></div>
+                                <div id="gallery" style="display: block; visibility: visible;"></div>
 
                                 <!-- Initialize base gallery -->
                                 <script type="text/javascript">
@@ -473,7 +473,7 @@
                             </div>
                         </div>
                         <div class="swiper portfolio-Swiper portfolio-content py-5 z-0" data-aos="fade-up">
-                            <div class="swiper-wrapper design-wrapper">
+                            <div class="swiper-wrapper design-wrapper" style="visibility: visible;">
 
                                 <script type="text/javascript">
                                     $(function () {
@@ -496,10 +496,11 @@
                                                     index++;
                                                 });
                                             })
+                                        AOS.refresh();
                                     });
                                 </script>
 
-                                <div id="hidden-gallery" style="visibility: hidden; position: absolute; width: 0; height: 0; overflow: hidden;"></div>
+                                <div id="hidden-gallery" style="display:none; visibility: hidden; position: absolute; width: 0; height: 0; overflow: hidden;"></div>
 
                                 <script type="text/javascript">
                                     $(document).ready(function () {
@@ -556,7 +557,7 @@
                             </div>
                             <div class="row d-flex flex-wrap" data-aos="fade-up">
                                 <div class="col-lg-6 pb-5">
-                                    <div class="data-info" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="data-info" data-aos="flip-left" data-aos-delay="200">
                                         <div class="">
                                             <div>
                                                 <img src="images/about/Me_01.jpg" class="aboutimage">
