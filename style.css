@@ -311,6 +311,7 @@ p {
     text-align: center;
     width: 100%;
     max-width: 800px;
+    filter: drop-shadow(0 0 1rem #666);
 }
 
 .videoGallery-Centered {
