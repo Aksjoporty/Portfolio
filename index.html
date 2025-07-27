@@ -28,6 +28,7 @@
     <script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>
     <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
     <script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script>
+    <script type='text/javascript' src='unitegallery/themes/slider/ug-theme-slider.js'></script>
 
     <script src="js/galleryReader.js"></script>
 </head>
@@ -199,16 +200,19 @@
                                 <a href="#photography" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true">Photography</a>
                             </li>
                             <li class="pb-3">
-                                <a href="#publications" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="50">Publications</a>
+                                <a href="#videos" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="50">Videos</a>
                             </li>
                             <li class="pb-3">
-                                <a href="#design" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="100">Design</a>
+                                <a href="#publications" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="100">Publications</a>
                             </li>
                             <li class="pb-3">
-                                <a href="#about" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="150">About</a>
+                                <a href="#design" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="150">Design</a>
                             </li>
                             <li class="pb-3">
-                                <a href="#contact" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="200">Contact</a>
+                                <a href="#about" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="200">About</a>
+                            </li>
+                            <li class="pb-3">
+                                <a href="#contact" class="nav-link text-uppercase" data-aos="fade" data-aos-once="true" data-aos-delay="250">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -271,79 +275,79 @@
                                     <p>
                                         Choose category from the dropdown below.
                                     </p>
-                                        <a class="category-btn nav-link btn-toggle d-flex justify-content-between align-items-center collapsed text-uppercase py-2"
-                                           data-bs-toggle="collapse" data-bs-target="#pages-collapse" aria-expanded="false">
-                                            <h4 class="category-select">Categories</h4>
-                                        </a>
-                                        <div id="pages-collapse" class="collapse">
-                                            <ul class="list-unstyled py-3">
-                                                <li>
-                                                    <button class="filter-button" data-filter=".various">
-                                                        Various
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="filter-button" data-filter=".streetphoto">
-                                                        Street Photo
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="filter-button" data-filter=".nature">
-                                                        Nature
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="filter-button" data-filter=".culture">
-                                                        Culture
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="filter-button" data-filter=".animals">
-                                                        Animals
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="filter-button" data-filter=".automotive">
-                                                        Automotive
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="filter-button" data-filter=".food">
-                                                        Food
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="filter-button" data-filter=".reportage">
-                                                        Reportage
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="filter-button" data-filter=".landscapes">
-                                                        Landscapes
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="filter-button" data-filter=".events">
-                                                        Events
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="filter-button" data-filter=".studio">
-                                                        Studio
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="filter-button" data-filter=".retouch">
-                                                        Retouch
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <button class="filter-button" data-filter=".panoramic">
-                                                        Panoramic
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <a class="category-btn nav-link btn-toggle d-flex justify-content-between align-items-center collapsed text-uppercase py-2"
+                                       data-bs-toggle="collapse" data-bs-target="#pages-collapse" aria-expanded="false">
+                                        <h4 class="category-select">Categories</h4>
+                                    </a>
+                                    <div id="pages-collapse" class="collapse">
+                                        <ul class="list-unstyled py-3">
+                                            <li>
+                                                <button class="filter-button" data-filter=".various">
+                                                    Various
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="filter-button" data-filter=".streetphoto">
+                                                    Street Photo
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="filter-button" data-filter=".nature">
+                                                    Nature
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="filter-button" data-filter=".culture">
+                                                    Culture
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="filter-button" data-filter=".animals">
+                                                    Animals
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="filter-button" data-filter=".automotive">
+                                                    Automotive
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="filter-button" data-filter=".food">
+                                                    Food
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="filter-button" data-filter=".reportage">
+                                                    Reportage
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="filter-button" data-filter=".landscapes">
+                                                    Landscapes
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="filter-button" data-filter=".events">
+                                                    Events
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="filter-button" data-filter=".studio">
+                                                    Studio
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="filter-button" data-filter=".retouch">
+                                                    Retouch
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="filter-button" data-filter=".panoramic">
+                                                    Panoramic
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -352,45 +356,45 @@
 
                             <!-- Optional button based category selection. -->
                             <!--<div class="mb-5" data-aos="fade">
-                                <p>
-                                    <button class="filter-button" data-filter=".various">
-                                        Various
-                                    </button>
-                                    <button class="filter-button" data-filter=".streetphoto">
-                                        Street Photo
-                                    </button>
-                                    <button class="filter-button" data-filter=".nature">
-                                        Nature
-                                    </button>
-                                    <button class="filter-button" data-filter=".animals">
-                                        Animals
-                                    </button>
-                                    <button class="filter-button" data-filter=".automotive">
-                                        Automotive
-                                    </button>
-                                    <button class="filter-button" data-filter=".food">
-                                        Food
-                                    </button>
-                                    <button class="filter-button" data-filter=".reportage">
-                                        Reportage
-                                    </button>
-                                    <button class="filter-button" data-filter=".landscapes">
-                                        Landscapes
-                                    </button>
-                                    <button class="filter-button" data-filter=".events">
-                                        Events
-                                    </button>
-                                    <button class="filter-button" data-filter=".studio">
-                                        Studio
-                                    </button>
-                                    <button class="filter-button" data-filter=".retouch">
-                                        Retouch
-                                    </button>
-                                    <button class="filter-button" data-filter=".panoramic">
-                                        Panoramic
-                                    </button>
-                                </p>
-                            </div>-->
+                    <p>
+                        <button class="filter-button" data-filter=".various">
+                            Various
+                        </button>
+                        <button class="filter-button" data-filter=".streetphoto">
+                            Street Photo
+                        </button>
+                        <button class="filter-button" data-filter=".nature">
+                            Nature
+                        </button>
+                        <button class="filter-button" data-filter=".animals">
+                            Animals
+                        </button>
+                        <button class="filter-button" data-filter=".automotive">
+                            Automotive
+                        </button>
+                        <button class="filter-button" data-filter=".food">
+                            Food
+                        </button>
+                        <button class="filter-button" data-filter=".reportage">
+                            Reportage
+                        </button>
+                        <button class="filter-button" data-filter=".landscapes">
+                            Landscapes
+                        </button>
+                        <button class="filter-button" data-filter=".events">
+                            Events
+                        </button>
+                        <button class="filter-button" data-filter=".studio">
+                            Studio
+                        </button>
+                        <button class="filter-button" data-filter=".retouch">
+                            Retouch
+                        </button>
+                        <button class="filter-button" data-filter=".panoramic">
+                            Panoramic
+                        </button>
+                    </p>
+                </div>-->
 
                             <div data-aos="fade-up">
                                 <div id="gallery" style="display: block; visibility: visible;"></div>
@@ -421,137 +425,14 @@
                         </div>
                     </section>
 
-                    <!--PUBLICATIONS-->
-
-                    <section id="publications" class="my-5 py-5">
+                    <!--VIDEOS-->
+                    <section id="videos" class="my-5 py-5">
                         <div class="section-header my-5 border-top" data-aos="fade-up">
                             <div class="row justify-content-center">
                                 <div class="col-lg-6">
-                                    <span class="text-muted text-uppercase">some of the texts i have written</span>
+                                    <span class="text-muted text-uppercase">Some of my recent videography, advertisement and social media works</span>
                                     <h4 class="display-5 fw-normal" data-aos="fade-up">
-                                        Publications
-                                    </h4>
-                                </div>
-                                <div class="col-lg-6" data-aos="fade-up">
-                                    <p>
-                                        Feel free to download the formatted doc files.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper portfolio-Swiper portfolio-content py-5 z-0" data-aos="fade-up">
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide hovereffect">
-                                    <div style="background-color: #ff00088b;">
-                                        <a href="docs/AfrykanskiSen.docx">
-                                            <img src="images/functional/writing.webp"
-                                                 alt="portfolio" class="img-fluid img-responsive" />
-                                        </a>
-                                    </div>
-                                    <div class="caption d-flex justify-content-between align-items-center">
-                                        <a href="docs/AfrykanskiSen.docx">
-                                            <div class="overlay pt-4">
-                                                <h2>Afrykański sen</h2>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide hovereffect">
-                                    <div style="background-color: #ff00088b;">
-                                        <a href="docs/AnalizaNawrotu.docx">
-                                            <img src="images/functional/writing.webp"
-                                                 alt="portfolio" class="img-fluid img-responsive" />
-                                        </a>
-                                    </div>
-                                    <div class="caption d-flex justify-content-between align-items-center">
-                                        <a href="docs/AnalizaNawrotu.docx">
-                                            <div class="overlay pt-4">
-                                                <h2>Analiza Nawrotu</h2>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide hovereffect">
-                                    <div style="background-color: #ff00088b;">
-                                        <a href="docs/DramatWSzkole.docx">
-                                            <img src="images/functional/writing.webp"
-                                                 alt="portfolio" class="img-fluid img-responsive" />
-                                        </a>
-                                    </div>
-                                    <div class="caption d-flex justify-content-between align-items-center">
-                                        <a href="docs/DramatWSzkole.docx">
-                                            <div class="overlay pt-4">
-                                                <h2>Dramat w szkole</h2>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide hovereffect">
-                                    <div style="background-color: #ff00088b;">
-                                        <a href="docs/FotografowieLudzkichChorob.docx">
-                                            <img src="images/functional/writing.webp"
-                                                 alt="portfolio" class="img-fluid img-responsive" />
-                                        </a>
-                                    </div>
-                                    <div class="caption d-flex justify-content-between align-items-center">
-                                        <a href="docs/FotografowieLudzkichChorob.docx">
-                                            <div class="overlay pt-4">
-                                                <h2>Fotografowie Ludzkich Chorób</h2>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide hovereffect">
-                                    <div style="background-color: #ff00088b;">
-                                        <a href="docs/Koronawirus.docx">
-                                            <img src="images/functional/writing.webp"
-                                                 alt="portfolio" class="img-fluid img-responsive" />
-                                        </a>
-                                    </div>
-                                    <div class="caption d-flex justify-content-between align-items-center">
-                                        <a href="docs/Koronawirus.docx">
-                                            <div class="overlay pt-4">
-                                                <h2>Koronawirus</h2>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide hovereffect">
-                                    <div style="background-color: #ff00088b;">
-                                        <a href="docs/SpoleczenstwoZmediotyzowane.docx">
-                                            <img src="images/functional/writing.webp"
-                                                 alt="portfolio" class="img-fluid img-responsive" />
-                                        </a>
-                                    </div>
-                                    <div class="caption d-flex justify-content-between align-items-center">
-                                        <a href="docs/SpoleczenstwoZmediotyzowane.docx">
-                                            <div class="overlay pt-4">
-                                                <h2>Spoleczenstwo Zmediatyzowane</h2>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </section>
-
-                    <!--DESIGN-->
-
-                    <section id="design" class="my-5 py-5">
-                        <div class="section-header my-5 border-top" data-aos="fade-up">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-6">
-                                    <span class="text-muted text-uppercase">some of my publicated graphics design work</span>
-                                    <h4 class="display-5 fw-normal" data-aos="fade-up">
-                                        Graphics Design
+                                        Videos
                                     </h4>
                                 </div>
                                 <div class="col-lg-6" data-aos="fade-up">
@@ -560,201 +441,353 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper portfolio-Swiper portfolio-content py-5 z-0" data-aos="fade-up">
-                            <div class="swiper-wrapper design-wrapper" style="visibility: visible;">
 
-                                <script type="text/javascript">
-                                    $(function () {
-                                        fetch("gallery.json")
-                                            .then(response => response.json())
-                                            .then(data => {
-                                                let index = 0;
+                        <div class="videoGallery-Centered" data-aos="fade-up">
+                            <div id="videoGallery" style="display: block; visibility: visible;"></div>
 
-                                                data['graphic-design'].forEach(url => {
-                                                    const img = new Image();
-                                                    img.src = url;
-
-                                                        $(".swiper-wrapper.design-wrapper").append(`
-                                                        <div class="swiper-slide hovereffect">
-                                                            <div style="background-color: #ff00088b;">
-                                                              <img src="${url}" class="open-gallery img-fluid img-responsive" data-index="${index}" alt="Open Image"/>
-                                                        </div>
-                                                    </div>`);
-
-                                                    index++;
-                                                });
-                                            })
-                                        AOS.refresh();
-                                    });
-                                </script>
-
-                                <!--<div id="hidden-gallery" style="display:none; visibility: hidden; position: absolute; width: 0; height: 0; overflow: hidden;"></div>
-
-                                <script type="text/javascript">
-                                    $(document).ready(function () {
-                                        var folder = "images/graphic-design/";
-
-                                        $.ajax({
-                                            url: folder,
-                                            async: false,
-                                            cache: false,
-                                            success: function (data) {
-                                                var $gallery = $("#hidden-gallery");
-                                                var imgsToAppend = '';
-
-                                                $(data).find("a").each(function (i, el) {
-                                                    var val = $(el).attr('href');
-                                                    if (val.match(/\.(jpe?g|png|gif)$/)) {
-                                                        imgsToAppend += "<img alt='' src='" + folder + val + "' data-image='" + folder + val + "' data-description='uploaded file by user'>";
-                                                    }
-                                                });
-
-                                                if (imgsToAppend) {
-                                                    $gallery.append(imgsToAppend);
-                                                }
-
-                                                var gallery = $gallery.unitegallery();
-
-                                                $(document).on("click", ".open-gallery", function () {
-                                                    var imageIndex = $(this).data("index");
-                                                    gallery.play();
-                                                });
-                                            }
-                                        });
-                                    });
-                                </script>-->
-                            </div>
-                            <div class="swiper-pagination"></div>
+                            <!-- Initialize videos gallery -->
+                            <script type="text/javascript">
+                                $('document').ready(function () {
+                                    loadVideoGallery();
+                                });
+                            </script>
                         </div>
-                    </section>
+                </section>
 
-                    <!--ABOUT-->
+                <!--PUBLICATIONS-->
 
-                    <section id="about" class="my-5 py-5 bg-text">
-                        <div class="section-header my-5 border-top" data-aos="fade-up">
-                            <div class="row mb-5">
-                                <div class="col-lg-6" data-aos="fade-up">
-                                    <span class="text-muted text-uppercase">Get to know me</span>
-                                    <h4 class="display-5 fw-normal" data-aos="fade-up">
-                                        About Me
-                                    </h4>
-                                </div>
+                <section id="publications" class="my-5 py-5">
+                    <div class="section-header my-5 border-top" data-aos="fade-up">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <span class="text-muted text-uppercase">some of the texts i have written</span>
+                                <h4 class="display-5 fw-normal" data-aos="fade-up">
+                                    Publications
+                                </h4>
                             </div>
-                        </div>
-                        <div class="row d-flex flex-wrap" data-aos="fade-up">
-                            <div class="col-lg-6 pb-5">
-                                <div class="data-info" data-aos="flip-left" data-aos-delay="200">
-                                    <div class="">
-                                        <div>
-                                            <img src="images/about/Me_01.jpg" class="aboutimage">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 pb-5" data-aos="fade">
-                                <p class="text-secondary">
-                                    I am a journalist specializing in press, advertising, and publishing photography. I was studying at the University of Warsaw. I am also a highly creative person with countless ideas per minute—in two words, an artistic soul. My passions include photography, digital graphics, drawing, singing, and social media creation. I have been working with graphic design and photomanipulation since the age of 15, meaning I have over 20 years of experience with graphic software.
-                                </p>
-                                <p class="text-secondary" data-aos="fade">
-                                    In the past, I ran my own YouTube channel dedicated to fandubbing and Disney song covers, which was my huge fascination at the time. Right now I am working mostly in marketing, social media but I am also taking offers for photography, graphic design and text writing. I love working with people. This page is just a place for me to express my creativity and share some my work with the world. 
+                            <div class="col-lg-6" data-aos="fade-up">
+                                <p>
+                                    Feel free to download the formatted doc files.
                                 </p>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                    <div class="swiper portfolio-Swiper portfolio-content py-5 z-0" data-aos="fade-up">
+                        <div class="swiper-wrapper">
 
-                    <!--CONTACT-->
-
-                    <section id="contact" class="my-5 py-5 bg-text">
-                        <div class="section-header my-5 border-top" data-aos="fade-up">
-                            <div class="row mb-5">
-                                <div class="col-lg-6" data-aos="fade-up">
-                                    <span class="text-muted text-uppercase">Let's get in touch</span>
-                                    <h4 class="display-5 fw-normal" data-aos="fade-up">
-                                        Contact Me
-                                    </h4>
-                                    <p>
-                                        Feel free to contact me for any reasons related to my work.
-                                    </p>
+                            <div class="swiper-slide hovereffect">
+                                <div style="background-color: #ff00088b;">
+                                    <a href="docs/AfrykanskiSen.docx">
+                                        <img src="images/functional/writing.webp"
+                                             alt="portfolio" class="img-fluid img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="caption d-flex justify-content-between align-items-center">
+                                    <a href="docs/AfrykanskiSen.docx">
+                                        <div class="overlay pt-4">
+                                            <h2>Afrykański sen</h2>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-                            <div class="row d-flex g-5">
-                                <div class="col-lg-7" data-aos="fade-up">
-                                    <h3 class="fw-medium">Frequently Asked Questions</h3>
-                                    <div class="accordion" id="accordionExample2">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#accordion-collapse1" aria-expanded="true"
-                                                        aria-controls="accordion-collapse1">
-                                                    Where are you located?
-                                                </button>
-                                            </h2>
-                                            <div id="accordion-collapse1" class="accordion-collapse collapse show"
-                                                 aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
-                                                <div class="accordion-body">
-                                                    I am based in Warsaw, Poland, but I accept individual photography assignments in various regions of the country. Additionally, I offer online services for certain types of projects, such as photo editing and consultation. Feel free to contact me to discuss the possibilities.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingTwo">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#accordion-collapse2" aria-expanded="false"
-                                                        aria-controls="accordion-collapse2">
-                                                    What types of assignments do you take on?
-                                                </button>
-                                            </h2>
-                                            <div id="accordion-collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                                 data-bs-parent="#accordionExample2">
-                                                <div class="accordion-body">
-                                                    I specialize in reportage photography, covering cultural, social, and business events, as well as documentary storytelling. I also offer individual portrait sessions and photo reports for media and organizations. If you have a custom request, feel free to reach out, and we can discuss the details.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingThree">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                        data-bs-target="#accordion-collapse3" aria-expanded="false"
-                                                        aria-controls="accordion-collapse3">
-                                                    Can I use the photos for commercial purposes?
-                                                </button>
-                                            </h2>
-                                            <div id="accordion-collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                                 data-bs-parent="#accordionExample2">
-                                                <div class="accordion-body">
-                                                    Yes, but licensing terms depend on our prior agreement. By default, I provide images with rights for media publication, promotional materials, and websites. However, for broader usage (e.g., advertising), we will need to discuss copyright details individually.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div class="col-lg-5">
-                                    <div class="right-content" data-aos="fade-up">
-                                        <div class="contact-form py-3">
-                                            <form id="form" class="form-group">
-                                                <div class="pb-2">
-                                                    <input type="text" name="name" placeholder="Your Full Name" class="form-control" />
-                                                </div>
-                                                <div class="pb-2">
-                                                    <input type="text" name="address" placeholder="Your Email Address" class="form-control" />
-                                                </div>
-                                                <div class="pb-2">
-                                                    <textarea placeholder="Your Message" rows="6" class="form-control"></textarea>
-                                                </div>
-                                                <button type="submit" name="submit" class="btn btn-dark w-100 btn-rounded">
-                                                    Submit
-                                                </button>
-                                            </form>
+                            <div class="swiper-slide hovereffect">
+                                <div style="background-color: #ff00088b;">
+                                    <a href="docs/AnalizaNawrotu.docx">
+                                        <img src="images/functional/writing.webp"
+                                             alt="portfolio" class="img-fluid img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="caption d-flex justify-content-between align-items-center">
+                                    <a href="docs/AnalizaNawrotu.docx">
+                                        <div class="overlay pt-4">
+                                            <h2>Analiza Nawrotu</h2>
                                         </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide hovereffect">
+                                <div style="background-color: #ff00088b;">
+                                    <a href="docs/DramatWSzkole.docx">
+                                        <img src="images/functional/writing.webp"
+                                             alt="portfolio" class="img-fluid img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="caption d-flex justify-content-between align-items-center">
+                                    <a href="docs/DramatWSzkole.docx">
+                                        <div class="overlay pt-4">
+                                            <h2>Dramat w szkole</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide hovereffect">
+                                <div style="background-color: #ff00088b;">
+                                    <a href="docs/FotografowieLudzkichChorob.docx">
+                                        <img src="images/functional/writing.webp"
+                                             alt="portfolio" class="img-fluid img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="caption d-flex justify-content-between align-items-center">
+                                    <a href="docs/FotografowieLudzkichChorob.docx">
+                                        <div class="overlay pt-4">
+                                            <h2>Fotografowie Ludzkich Chorób</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide hovereffect">
+                                <div style="background-color: #ff00088b;">
+                                    <a href="docs/Koronawirus.docx">
+                                        <img src="images/functional/writing.webp"
+                                             alt="portfolio" class="img-fluid img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="caption d-flex justify-content-between align-items-center">
+                                    <a href="docs/Koronawirus.docx">
+                                        <div class="overlay pt-4">
+                                            <h2>Koronawirus</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide hovereffect">
+                                <div style="background-color: #ff00088b;">
+                                    <a href="docs/SpoleczenstwoZmediotyzowane.docx">
+                                        <img src="images/functional/writing.webp"
+                                             alt="portfolio" class="img-fluid img-responsive" />
+                                    </a>
+                                </div>
+                                <div class="caption d-flex justify-content-between align-items-center">
+                                    <a href="docs/SpoleczenstwoZmediotyzowane.docx">
+                                        <div class="overlay pt-4">
+                                            <h2>Spoleczenstwo Zmediatyzowane</h2>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
+
+                <!--DESIGN-->
+
+                <section id="design" class="my-5 py-5">
+                    <div class="section-header my-5 border-top" data-aos="fade-up">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <span class="text-muted text-uppercase">some of my publicated graphics design work</span>
+                                <h4 class="display-5 fw-normal" data-aos="fade-up">
+                                    Graphics Design
+                                </h4>
+                            </div>
+                            <div class="col-lg-6" data-aos="fade-up">
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper portfolio-Swiper portfolio-content py-5 z-0" data-aos="fade-up">
+                        <div class="swiper-wrapper design-wrapper" style="visibility: visible;">
+
+                            <script type="text/javascript">
+                                $(function () {
+                                    fetch("gallery.json")
+                                        .then(response => response.json())
+                                        .then(data => {
+                                            let index = 0;
+
+                                            data['graphic-design'].forEach(url => {
+                                                const img = new Image();
+                                                img.src = url;
+
+                                                $(".swiper-wrapper.design-wrapper").append(`
+                                                <div class="swiper-slide hovereffect">
+                                                <div style="background-color: #ff00088b;">
+                                                <img src="${url}" class="open-gallery img-fluid img-responsive" data-index="${index}" alt="Open Image"/>
+                                                </div>
+                                                </div>`);
+
+                                                index++;
+                                            });
+                                        })
+                                    AOS.refresh();
+                                });
+                            </script>
+
+                            <!--<div id="hidden-gallery" style="display:none; visibility: hidden; position: absolute; width: 0; height: 0; overflow: hidden;"></div>
+
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        var folder = "images/graphic-design/";
+
+                        $.ajax({
+                            url: folder,
+                            async: false,
+                            cache: false,
+                            success: function (data) {
+                                var $gallery = $("#hidden-gallery");
+                                var imgsToAppend = '';
+
+                                $(data).find("a").each(function (i, el) {
+                                    var val = $(el).attr('href');
+                                    if (val.match(/\.(jpe?g|png|gif)$/)) {
+                                        imgsToAppend += "<img alt='' src='" + folder + val + "' data-image='" + folder + val + "' data-description='uploaded file by user'>";
+                                    }
+                                });
+
+                                if (imgsToAppend) {
+                                    $gallery.append(imgsToAppend);
+                                }
+
+                                var gallery = $gallery.unitegallery();
+
+                                $(document).on("click", ".open-gallery", function () {
+                                    var imageIndex = $(this).data("index");
+                                    gallery.play();
+                                });
+                            }
+                        });
+                    });
+                </script>-->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
+
+                <!--ABOUT-->
+
+                <section id="about" class="my-5 py-5 bg-text">
+                    <div class="section-header my-5 border-top" data-aos="fade-up">
+                        <div class="row mb-5">
+                            <div class="col-lg-6" data-aos="fade-up">
+                                <span class="text-muted text-uppercase">Get to know me</span>
+                                <h4 class="display-5 fw-normal" data-aos="fade-up">
+                                    About Me
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex flex-wrap" data-aos="fade-up">
+                        <div class="col-lg-6 pb-5">
+                            <div class="data-info" data-aos="flip-left" data-aos-delay="200">
+                                <div class="">
+                                    <div>
+                                        <img src="images/about/Me_01.jpg" class="aboutimage">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
 
-                </div>
+                        <div class="col-lg-6 pb-5" data-aos="fade">
+                            <p class="text-secondary">
+                                I am a journalist specializing in press, advertising, and publishing photography. I was studying at the University of Warsaw. I am also a highly creative person with countless ideas per minute—in two words, an artistic soul. My passions include photography, digital graphics, drawing, singing, and social media creation. I have been working with graphic design and photomanipulation since the age of 15, meaning I have over 20 years of experience with graphic software.
+                            </p>
+                            <p class="text-secondary" data-aos="fade">
+                                In the past, I ran my own YouTube channel dedicated to fandubbing and Disney song covers, which was my huge fascination at the time. Right now I am working mostly in marketing, social media but I am also taking offers for photography, graphic design and text writing. I love working with people. This page is just a place for me to express my creativity and share some my work with the world.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!--CONTACT-->
+
+                <section id="contact" class="my-5 py-5 bg-text">
+                    <div class="section-header my-5 border-top" data-aos="fade-up">
+                        <div class="row mb-5">
+                            <div class="col-lg-6" data-aos="fade-up">
+                                <span class="text-muted text-uppercase">Let's get in touch</span>
+                                <h4 class="display-5 fw-normal" data-aos="fade-up">
+                                    Contact Me
+                                </h4>
+                                <p>
+                                    Feel free to contact me for any reasons related to my work.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row d-flex g-5">
+                            <div class="col-lg-7" data-aos="fade-up">
+                                <h3 class="fw-medium">Frequently Asked Questions</h3>
+                                <div class="accordion" id="accordionExample2">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#accordion-collapse1" aria-expanded="true"
+                                                    aria-controls="accordion-collapse1">
+                                                Where are you located?
+                                            </button>
+                                        </h2>
+                                        <div id="accordion-collapse1" class="accordion-collapse collapse show"
+                                             aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                I am based in Warsaw, Poland, but I accept individual photography assignments in various regions of the country. Additionally, I offer online services for certain types of projects, such as photo editing and consultation. Feel free to contact me to discuss the possibilities.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#accordion-collapse2" aria-expanded="false"
+                                                    aria-controls="accordion-collapse2">
+                                                What types of assignments do you take on?
+                                            </button>
+                                        </h2>
+                                        <div id="accordion-collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                             data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                I specialize in reportage photography, covering cultural, social, and business events, as well as documentary storytelling. I also offer individual portrait sessions and photo reports for media and organizations. If you have a custom request, feel free to reach out, and we can discuss the details.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#accordion-collapse3" aria-expanded="false"
+                                                    aria-controls="accordion-collapse3">
+                                                Can I use the photos for commercial purposes?
+                                            </button>
+                                        </h2>
+                                        <div id="accordion-collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                             data-bs-parent="#accordionExample2">
+                                            <div class="accordion-body">
+                                                Yes, but licensing terms depend on our prior agreement. By default, I provide images with rights for media publication, promotional materials, and websites. However, for broader usage (e.g., advertising), we will need to discuss copyright details individually.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="right-content" data-aos="fade-up">
+                                    <div class="contact-form py-3">
+                                        <form id="form" class="form-group">
+                                            <div class="pb-2">
+                                                <input type="text" name="name" placeholder="Your Full Name" class="form-control" />
+                                            </div>
+                                            <div class="pb-2">
+                                                <input type="text" name="address" placeholder="Your Email Address" class="form-control" />
+                                            </div>
+                                            <div class="pb-2">
+                                                <textarea placeholder="Your Message" rows="6" class="form-control"></textarea>
+                                            </div>
+                                            <button type="submit" name="submit" class="btn btn-dark w-100 btn-rounded">
+                                                Submit
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
             </div>
         </main>
     </div>

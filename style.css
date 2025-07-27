@@ -305,9 +305,23 @@ p {
   width: 100%;
 }
 
+#videoGallery {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.videoGallery-Centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* toggle */
 .btn-toggle {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .btn-toggle:hover,

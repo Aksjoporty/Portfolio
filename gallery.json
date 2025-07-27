@@ -772,5 +772,13 @@
         "images/various/_DSC1209.jpg",
         "images/various/_DSC1212.jpg",
         "images/various/_DSC1357.jpg"
+    ],
+    "videos": [
+        "images/videos/Vid_01.mp4",
+        "images/videos/Vid_02.mp4"
+    ],
+    "videosThumbs": [
+        "images/videosThumbs/Vid_01.jpg",
+        "images/videosThumbs/Vid_02.jpg"
     ]
 }

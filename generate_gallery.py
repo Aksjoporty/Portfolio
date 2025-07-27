@@ -5,7 +5,7 @@ BASE_DIR = "images"
 OUTPUT_FILE = "gallery.json"
 
 def get_images_from_folder(folder):
-    valid_extensions = (".jpg", ".jpeg", ".png", ".gif")
+    valid_extensions = (".jpg", ".jpeg", ".png", ".gif", ".mp4")
     return [f for f in os.listdir(folder) if f.lower().endswith(valid_extensions)]
 
 def generate_gallery_json():
