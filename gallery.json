@@ -774,11 +774,33 @@
         "images/various/_DSC1357.jpg"
     ],
     "videos": [
-        "images/videos/Vid_01.mp4",
-        "images/videos/Vid_02.mp4"
+        "images/videos/ABU1.mp4",
+        "images/videos/ABU2.mp4",
+        "images/videos/ABU4.mp4",
+        "images/videos/BACKSTAGE1.mp4",
+        "images/videos/BACKSTAGE2.mp4",
+        "images/videos/BACKSTAGE4.mp4",
+        "images/videos/CITIBREAK1.mp4",
+        "images/videos/CITIBREAK2.mp4",
+        "images/videos/CITIBREAK3.mp4",
+        "images/videos/MARINE1.mp4",
+        "images/videos/MARINE2.mp4",
+        "images/videos/MARINE3.mp4",
+        "images/videos/MARINE4.mp4"
     ],
     "videosThumbs": [
-        "images/videosThumbs/Vid_01.jpg",
-        "images/videosThumbs/Vid_02.jpg"
+        "images/videosThumbs/ABU1.jpg",
+        "images/videosThumbs/ABU2.jpg",
+        "images/videosThumbs/ABU4.jpg",
+        "images/videosThumbs/BACKSTAGE1.jpg",
+        "images/videosThumbs/BACKSTAGE2.jpg",
+        "images/videosThumbs/BACKSTAGE4.jpg",
+        "images/videosThumbs/CITIBREAK1.jpg",
+        "images/videosThumbs/CITIBREAK2.jpg",
+        "images/videosThumbs/CITIBREAK3.jpg",
+        "images/videosThumbs/MARINE1.jpg",
+        "images/videosThumbs/MARINE2.jpg",
+        "images/videosThumbs/MARINE3.jpg",
+        "images/videosThumbs/MARINE4.jpg"
     ]
 }
