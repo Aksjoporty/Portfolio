@@ -3,6 +3,41 @@
         "images/about/Me_01.jpg",
         "images/about/Me_03.jpeg"
     ],
+    "advertisement": [
+        "images/advertisement/IMG_0147.JPG",
+        "images/advertisement/IMG_0149.JPG",
+        "images/advertisement/IMG_0150.JPG",
+        "images/advertisement/IMG_0191.JPG",
+        "images/advertisement/IMG_0195.JPG",
+        "images/advertisement/IMG_0245.JPG",
+        "images/advertisement/IMG_0249.JPG",
+        "images/advertisement/IMG_0278.JPG",
+        "images/advertisement/IMG_0291.JPG",
+        "images/advertisement/IMG_0394.JPG",
+        "images/advertisement/IMG_0398.JPG",
+        "images/advertisement/IMG_0429.JPG",
+        "images/advertisement/IMG_0432.JPG",
+        "images/advertisement/IMG_0444.JPG",
+        "images/advertisement/IMG_0461.JPG",
+        "images/advertisement/IMG_0471.JPG",
+        "images/advertisement/_DSC4197.jpg",
+        "images/advertisement/_DSC4205.jpg",
+        "images/advertisement/_DSC4229.jpg",
+        "images/advertisement/_DSC4312.jpg",
+        "images/advertisement/_DSC4351.jpg",
+        "images/advertisement/_DSC4353.jpg",
+        "images/advertisement/_DSC4360.jpg",
+        "images/advertisement/_DSC4361.jpg",
+        "images/advertisement/_DSC4396.jpg",
+        "images/advertisement/_DSC4439.jpg",
+        "images/advertisement/_DSC4457.jpg",
+        "images/advertisement/_DSC4500.jpg",
+        "images/advertisement/_DSC4541.jpg",
+        "images/advertisement/_DSC4546.jpg",
+        "images/advertisement/_DSC4556.jpg",
+        "images/advertisement/_DSC4560.jpg",
+        "images/advertisement/_DSC4617.jpg"
+    ],
     "animals": [
         "images/animals/133330952_10224707334815264_2008759134018796916_n.jpg",
         "images/animals/1738167318296.jpg",
@@ -248,6 +283,9 @@
         "images/gallery1/1710086472807.jpg",
         "images/gallery1/1738173513596.jpg",
         "images/gallery1/1738173513947.jpg",
+        "images/gallery1/IMG_0291.JPG",
+        "images/gallery1/IMG_0398.JPG",
+        "images/gallery1/IMG_0461.JPG",
         "images/gallery1/Karol13.jpg",
         "images/gallery1/LowKey3.jpg",
         "images/gallery1/_DSC0127.jpg",
@@ -257,7 +295,10 @@
         "images/gallery1/_DSC1125_C.jpg",
         "images/gallery1/_DSC1209.jpg",
         "images/gallery1/_DSC1391.jpg",
-        "images/gallery1/_DSC3243.jpg"
+        "images/gallery1/_DSC3243.jpg",
+        "images/gallery1/_DSC4351.jpg",
+        "images/gallery1/_DSC4361.jpg",
+        "images/gallery1/_DSC4541.jpg"
     ],
     "graphic-design": [
         "images/graphic-design/1_WRockowymStylu_A.jpg",
@@ -336,6 +377,12 @@
         "images/landscapes/_DSC3687.jpg",
         "images/landscapes/_DSC9997.jpg",
         "images/landscapes/_DSC9999.jpg"
+    ],
+    "lformatgraphics": [
+        "images/lformatgraphics/Ven_01_Layout.jpg",
+        "images/lformatgraphics/Ven_04_Layout.jpg",
+        "images/lformatgraphics/Ven_05_Layout.jpg",
+        "images/lformatgraphics/Ven_06_Layout.jpg"
     ],
     "main": [
         "images/main/background_01.png",
